@@ -1,0 +1,70 @@
+version: 1
+
+dn: ou=groups,dc=mind-hochschul-netzwerk,dc=de
+objectclass: organizationalUnit
+objectclass: top
+ou: groups
+
+dn: cn=coursecreators,ou=groups,dc=mind-hochschul-netzwerk,dc=de
+cn: coursecreators
+description: Recht, in Moodle Kurse anzulegen
+member: cn=admin,dc=mind-hochschul-netzwerk,dc=de
+member: cn=test.manager,ou=people,dc=mind-hochschul-netzwerk,dc=de
+objectclass: groupOfNames
+objectclass: top
+
+dn: cn=managers,ou=groups,dc=mind-hochschul-netzwerk,dc=de
+cn: managers
+description: Recht zur Mitglieder- und Kursverwaltung in Moodle
+member: cn=admin,dc=mind-hochschul-netzwerk,dc=de
+member: cn=test.manager,ou=people,dc=mind-hochschul-netzwerk,dc=de
+objectclass: groupOfNames
+objectclass: top
+
+dn: ou=moodleCourses,dc=mind-hochschul-netzwerk,dc=de
+description: vorgegebene Zuordnungen zu Moodle-Kursen
+objectclass: organizationalUnit
+objectclass: top
+ou: moodleCourses
+
+dn: cn=alleMitglieder,ou=moodleCourses,dc=mind-hochschul-netzwerk,dc=de
+cn: alleMitglieder
+description:: SW5mb3JtYXRpb25lbiBmw7xyIGFsbGUgTWl0Z2xpZWRlcg==
+member: cn=admin,dc=mind-hochschul-netzwerk,dc=de
+member: cn=test.user,ou=people,dc=mind-hochschul-netzwerk,dc=de
+member: cn=test.manager,ou=people,dc=mind-hochschul-netzwerk,dc=de
+objectclass: groupOfNames
+objectclass: top
+
+dn: cn=listen,ou=moodleCourses,dc=mind-hochschul-netzwerk,dc=de
+cn: listen
+member: cn=admin,dc=mind-hochschul-netzwerk,dc=de
+member: cn=test.user,ou=people,dc=mind-hochschul-netzwerk,dc=de
+member: cn=test.manager,ou=people,dc=mind-hochschul-netzwerk,dc=de
+objectclass: groupOfNames
+objectclass: top
+
+dn: ou=people,dc=mind-hochschul-netzwerk,dc=de
+objectclass: organizationalUnit
+objectclass: top
+ou: people
+
+dn: cn=test.manager,ou=people,dc=mind-hochschul-netzwerk,dc=de
+cn: test.manager
+givenname: Test
+mail: test.manager@example.com.invalid
+objectclass: inetOrgPerson
+objectclass: top
+sn: Manager
+userpassword: {SHA}qUqP5cyxm6YcTAhz05Hph5gvu9M=
+
+dn: cn=test.user,ou=people,dc=mind-hochschul-netzwerk,dc=de
+cn: test.user
+description: Das bin ich!
+givenname: Test
+mail: test.user@example.com.invalid
+objectclass: inetOrgPerson
+objectclass: top
+sn: User
+userpassword: {SHA}qUqP5cyxm6YcTAhz05Hph5gvu9M=
+
