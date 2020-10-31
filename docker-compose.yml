@@ -1,4 +1,4 @@
-version: '2.1'
+version: '3.5'
 services:
   ldap:
     image: osixia/openldap:1.4.0
@@ -36,7 +36,6 @@ services:
       - traefik
     labels:
       - traefik.enable=true
-      - traefik.docker.network=traefik
       - traefik.docker.network=traefik
       - traefik.http.routers.phpldapadmin.rule=Host(`pla.${DOMAINNAME}`)
       - traefik.http.routers.phpldapadmin.tls=true
