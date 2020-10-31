@@ -3,6 +3,8 @@ openldap server
 
 ## run
 
+Edit env.sample and save it as .env
+
     $ docker-compose up -d ldap
 
 Start PhpLDAPAdmin:
