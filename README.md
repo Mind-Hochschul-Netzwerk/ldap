@@ -22,5 +22,5 @@ Go to [http://pla.docker.localhost](http://pla.docker.localhost) to open the Php
 
 Use PhpLDAPAdmin (see above) to import the `test-data.ldif`.
 
-Included users (use them to login to Moodle): `test.user` and `test.manager`, both with password `test`.
+Included users (use them to login to Moodle): `test.user` and `test.manager`, both with password `MHNTest0#`.
 
