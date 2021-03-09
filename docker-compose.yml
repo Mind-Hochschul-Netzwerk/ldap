@@ -1,4 +1,4 @@
-version: '3.5'
+version: "3.5"
 services:
   ldap:
     image: osixia/openldap:1.4.0
@@ -42,7 +42,7 @@ services:
       - traefik.http.routers.phpldapadmin.rule=Host(`pla.${DOMAINNAME}`)
       - traefik.http.routers.phpldapadmin.tls=true
       - traefik.http.routers.phpldapadmin.tls.certresolver=myresolver
-      - traefik.http.routers.prpldapadmin.middlewares=secheader
+      - traefik.http.routers.prpldapadmin.middlewares=secheader@file
 
 networks:
   ldap:
