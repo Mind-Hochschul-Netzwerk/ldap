@@ -61,7 +61,7 @@ ou: people
 dn: cn=test.manager,ou=people,dc=mind-hochschul-netzwerk,dc=de
 cn: test.manager
 description: Hallo
-employeenumber: 1234
+employeenumber: 2
 givenname: Test
 mail: test.manager@mail.invalid
 objectclass: inetOrgPerson
@@ -74,7 +74,7 @@ userpassword: {CRYPT}$5$rounds=100000$PcSWCxqZ$JAvYxnr7ChcDH1dUb82/TcUJrBe4G
 dn: cn=test.user,ou=people,dc=mind-hochschul-netzwerk,dc=de
 cn: test.user
 description: Das bin ich!
-employeenumber: 1234
+employeenumber: 3
 employeetype: 1
 givenname: Test
 mail: test.user@mail.invalid
@@ -88,6 +88,7 @@ userpassword: {CRYPT}$5$rounds=100000$PcSWCxqZ$JAvYxnr7ChcDH1dUb82/TcUJrBe4G
 dn: cn=Webteam,ou=people,dc=mind-hochschul-netzwerk,dc=de
 cn: Webteam
 employeetype: 0
+employeenumber: 1
 givenname: Web
 mail: webteam@mail.invalid
 objectclass: inetOrgPerson

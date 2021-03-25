@@ -24,7 +24,7 @@ Edit env.sample and save it as .env
 
 Use PhpLDAPAdmin (see above) to import the `test-data.ldif`.
 
-Included users: 
+Included users:
 
 * `test.user` with password `MHNTest0#`
 * `test.manager` with password `MHNTest0#`
