@@ -40,8 +40,6 @@ services:
       - traefik.enable=true
       - traefik.docker.network=traefik
       - traefik.http.routers.phpldapadmin.rule=Host(`pla.${DOMAINNAME}`)
-      - traefik.http.routers.phpldapadmin.tls=true
-      - traefik.http.routers.phpldapadmin.tls.certresolver=myresolver
       - traefik.http.routers.prpldapadmin.middlewares=secheader@file
 
 networks:
