@@ -39,8 +39,9 @@ services:
     labels:
       - traefik.enable=true
       - traefik.docker.network=traefik
+      - traefik.http.routers.phpldapadmin.entrypoints=websecure
       - traefik.http.routers.phpldapadmin.rule=Host(`pla.${DOMAINNAME}`)
-      - traefik.http.routers.prpldapadmin.middlewares=secheader@file
+      - traefik.http.routers.phpldapadmin.middlewares=secheader@file
 
 networks:
   ldap:
