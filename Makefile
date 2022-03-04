@@ -8,8 +8,10 @@ endif
 
 dev: .env check-traefik
 	@echo "Starting DEV Server"
+	./ensurevolumes.sh
 	docker-compose up -d --force-recreate ldap phpldapadmin
 
 prod: .env check-traefik
 	@echo "Starting Production Server"
+	./ensurevolumes.sh
 	docker-compose up -d --force-recreate ldap
