@@ -23,6 +23,10 @@ services:
       - ${VOLUMES_DIR}/slapd.d:/etc/ldap/slapd.d
     networks:
       - ldap
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "5"
 
   phpldapadmin:
     image: osixia/phpldapadmin:latest
