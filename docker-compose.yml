@@ -17,7 +17,8 @@ services:
       - KEEP_EXISTING_CONFIG=false
       - LDAP_REMOVE_CONFIG_AFTER_SETUP=true
       - LDAP_SSL_HELPER_PREFIX=ldap
-      - LDAP_TLS=false
+      - LDAP_TLS=true
+      - LDAP_TLS_VERIFY_CLIENT=never
     volumes:
       - ${VOLUMES_DIR}/ldap:/var/lib/ldap
       - ${VOLUMES_DIR}/slapd.d:/etc/ldap/slapd.d
