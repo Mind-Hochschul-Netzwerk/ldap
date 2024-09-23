@@ -43,8 +43,6 @@ services:
       - traefik
     labels:
       - traefik.enable=true
-      - traefik.docker.network=traefik
-      - traefik.http.routers.phpldapadmin.entrypoints=websecure
       - traefik.http.routers.phpldapadmin.rule=Host(`pla.${DOMAINNAME}`)
 
 networks:
