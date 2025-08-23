@@ -26,6 +26,8 @@ Use PhpLDAPAdmin (see above) to import the `test-data.ldif`.
 
 Included users:
 
-* `test.user` with password `MHNTest0#`
-* `test.manager` with password `MHNTest0#`
-* `webteam` with password `webteam`
+* `webteam` with password `webteam1`
+* `schorsch.testmeier` with password `123`
+* `johnny.testmitglied` with password `123`
+* `hugo.neumitglied` with password `123`
+
