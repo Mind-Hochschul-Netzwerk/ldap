@@ -1,0 +1,12 @@
+dn: cn=module,cn=config
+objectClass: olcModuleList
+cn: module
+olcModuleLoad: pw-crypt
+
+dn: cn=config
+changetype: modify
+replace: olcPasswordHash
+olcPasswordHash: {CRYPT}
+-
+add: olcPasswordCryptSaltFormat
+olcPasswordCryptSaltFormat: $6$rounds=100000$%.16s
