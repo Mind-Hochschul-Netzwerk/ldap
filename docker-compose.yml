@@ -40,6 +40,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.http.routers.phpldapadmin.rule=Host(`pla.${DOMAINNAME}`)
+      - traefik.http.routers.phpldapadmin.middlewares=forwardauth@file
 
 networks:
   ldap:
