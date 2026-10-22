@@ -37,6 +37,7 @@ services:
       LDAP_LOGIN_OBJECTCLASS: organizationalRole
       LDAP_USERNAME: cn=admin,dc=mind-hochschul-netzwerk,dc=de
       LDAP_PASSWORD: "${LDAP_ADMIN_PASSWORD}"
+      LOG_CHANNEL: errorlog
     depends_on:
       - ldap
     networks:
