@@ -112,7 +112,8 @@ dn: cn=mvedit,ou=groups,dc=mind-hochschul-netzwerk,dc=de
 cn: mvedit
 description: Mitgliederbetreuung
 member: cn=admin,dc=mind-hochschul-netzwerk,dc=de
-member: cn=Webteam,ou=people,dc=mind-hochschul-neobjectclass: groupOfNames
+member: cn=Webteam,ou=people,dc=mind-hochschul-netzwerk,dc=de
+objectclass: groupOfNames
 objectclass: top
 
 # Entry 12: cn=mvread,ou=groups,dc=mind-hochschul-netzwerk,dc=de
